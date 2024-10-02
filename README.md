@@ -6,7 +6,7 @@
 
  To properly add your programs and services to .txt files follow these rules:
  	- Put one value in each line;
- 	- In **path\_list.txt** write full path to a program you want to be **started**. Write paths to your executables ONLY in double quotation marks - "C:\...\program.exe". This is because scripts use strings from **paths_list.txt** as is, including double quotes that are necessary for code to work properly.
+ 	- In **path\_list.txt** write full path to a program you want to be **started**. Write paths to your executables ONLY in double quotation marks - "C:\\...\program.exe". This is because scripts use strings from **paths_list.txt** as is, including double quotes that are necessary for code to work properly.
  	- In **program\_list.txt** write just the name of executable you want to be **stopped**. If executable has spaces in it's name put it in "" > *"My Program.exe"*.
  	- In **service\_list.txt** write service name of the service. This file works for both scripts.
 
