@@ -1,2 +1,0 @@
-"yourprogram1.exe"
-"yourprogram2.exe"

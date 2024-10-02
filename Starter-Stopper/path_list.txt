@@ -1,2 +1,2 @@
-"C:\...\yourprogram1.exe"
-"C:\...\yourprogram2.exe"
+"C:\...\program-1.exe"
+"C:\...\program-2.exe" -parameter
