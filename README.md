@@ -7,7 +7,7 @@
  To properly add your programs and services to .txt files follow these rules:
  - Put one value in each line;
  - In **path\_list.txt** write full path to a program. Parameters are also supported.
- - In **service\_list.txt** write it's service name.
+ - In **service\_list.txt** write name of a service.
 
 ### NOTICE:
  
