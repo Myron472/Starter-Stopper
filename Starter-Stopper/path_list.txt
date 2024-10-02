@@ -1,0 +1,7 @@
+"D:\Start.exe"
+"C:\Program Files\Locktime Software\Netlimiter\NLClientApp.exe"
+"C:\Program Files\AdGuard\Adguard.exe"
+"C:\Users\Glyder\AppData\Local\Yandex\YandexBrowser\Application\browser.exe"
+"D:\PortableApps\Portable iMe\iMe.exe"
+"C:\Users\Glyder\AppData\Local\Viber\Viber.exe"
+"D:\PortableApps\Portable Punto Switcher\PuntoSwitcherPortable.exe"
