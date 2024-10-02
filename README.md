@@ -10,7 +10,7 @@
  	- In **program\_list.txt** write just the name of executable you want to be **stopped**. If executable has spaces in it's name put it in "" > *"My Program.exe"*.
  	- In **service\_list.txt** write service name of the service. This file works for both scripts.
 
-## NOTICE:
+### NOTICE:
  
  1. Starter script uses **path_list.txt** whether Stopper uses **program_list.txt** file so be sure to add your program paths/executables to both of them. This is because for launching a program Windows needs full path to executable but for stopping a program it only needs it's name. Currently I'm working on Stopper script to make it use **path_list.txt** file.
  2. If you want to launch your programs with parameters (-sampleparameter) or launch UWP Apps via *explorer shell:AppsFolder\...* function you have to manually write code lines for each program. In the next release I will make script be able to run program that way.
