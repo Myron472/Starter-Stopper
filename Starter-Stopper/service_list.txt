@@ -1,3 +1,2 @@
-nlsvc
-ClickToRunSvc
-YandexBrowserService
+Service1Svc
+Service2Svc

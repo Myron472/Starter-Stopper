@@ -13,3 +13,8 @@ for /f "tokens=* delims=" %%s in (service_list.txt) do (
 for /f "tokens=* delims=" %%p in (program_list.txt) do (
 	taskkill /im %%p /fi "Status eq Running" /f
 )
+
+:: Stopping programs (modified code)
+:: for /f "tokens=* delims=" %%~np in (path_list.txt) do (
+::	taskkill /im %%p /fi "Status eq Running" /f
+:: )
