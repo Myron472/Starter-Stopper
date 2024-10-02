@@ -11,7 +11,7 @@
 
 ### NOTICE:
  
- If you want to launch UWP Apps via *explorer shell:AppsFolder\\...* function or close them you have to <u>manually write code lines for each program</u>. This is because Batch is a very old scripting language and the only way to program Starter and Stopper to use one string for UWP app and do different actions to it is to manually filter characters which is a huge pain for me. So there's a chance that one time I will rewrite this program in VBS or Powershell :P
+ If you want to launch UWP Apps via *explorer shell:AppsFolder\\...* function or close them you have to <u>manually write code lines for each program</u>. This is because Batch is a very old scripting language and programming this feature is a huge pain for me. Maybe one day I will rewrite this program in VBS or Powershell :P
 
 # To Do
 
