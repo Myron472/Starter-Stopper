@@ -1,4 +1,0 @@
-explorer shell:appsFolder\<PackageFamilyName>!App
-uwpprogram.exe
-explorer shell:appsFolder\MozillaThunderbird.MZLA_h5892qc0xkpca!App
-thunderbird.exe

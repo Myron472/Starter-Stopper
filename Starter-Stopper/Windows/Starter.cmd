@@ -5,15 +5,21 @@
 setlocal EnableExtensions EnableDelayedExpansion
 
 :: Starting services
-for /f "tokens=*" %%s in (service_list.txt) do (
+for /f "tokens=*" %%s in (services.txt) do (
 	sc config %%s start=enabled
 	sc start %%s
 )
 
 :: Starting programs
-for /f "tokens=* delims=^" %%p in (path_list.txt) do (
+for /f "tokens=* delims= ^" %%p in (paths.txt) do (
 	start "" %%p
 )
+
+:: UWP app start code (WIP)
+:: for /f "tokens=* delims= ^" %%u in (uwp.txt) do (
+::	set "family=%%u"
+::	start explorer shell:appsFolder\!family!!App
+::)
 
 :: Custom commands
 :: start explorer shell:appsFolder\MozillaThunderbird.MZLA_h5892qc0xkpca!App

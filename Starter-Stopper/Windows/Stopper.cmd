@@ -5,16 +5,16 @@
 setlocal EnableExtensions EnableDelayedExpansion
 
 :: Stopping services
-for /f "tokens=*" %%s in (service_list.txt) do (
+for /f "tokens=*" %%s in (services.txt) do (
 	sc config %%s start=disabled
 	sc stop %%s
 )
 
 :: Stopping programs
-for /f "tokens=* delims=^" %%p in (path_list.txt) do (
+for /f "tokens=* delims=^" %%p in (paths.txt) do (
 	set name="%%~np.exe"
 	taskkill /im !name! /fi "Status eq Running" /f
 )
 
-:: Custom commands
+:: Custom commands (example below)
 :: taskkill /im thunderbird.exe /fi "Status eq Running" /f
