@@ -1,6 +1,8 @@
 # Starter-Stopper
  
- This project contains 2 cmd scripts for starting and stopping programs and services. Programs and services can be customized via .txt files.
+  Starter-Stopper is 2 cmd scripts for starting and stopping programs and services. Programs and services can be customized via .txt files.
+
+  *I made this program primarily for myself so for now there is only windows version of this script.*
 
 # Adding programs / services to .txt files
 
@@ -17,3 +19,4 @@
 
  - ~~Rewrite Stopper to use *path\_list.txt* instead of *program\_list.txt*;~~
  - ~~Rewrite this ReadMe for new release.~~
+ - Make Bash script for Linux
