@@ -1,0 +1,2 @@
+<PackageFamilyName> uwpprogramname1.exe
+<PackageFamilyName> uwpprogramname2.exe

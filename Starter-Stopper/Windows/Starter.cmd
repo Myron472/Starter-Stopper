@@ -5,21 +5,27 @@
 setlocal EnableExtensions EnableDelayedExpansion
 
 :: Starting services
-for /f "tokens=*" %%s in (services.txt) do (
-	sc config %%s start=enabled
-	sc start %%s
+for /f "tokens=*" %%S in (services.txt) do (
+	sc config %%S start=enabled
+	sc start %%S
 )
 
 :: Starting programs
-for /f "tokens=* delims= ^" %%p in (paths.txt) do (
-	start "" %%p
+for /f "tokens=* delims=^" %%P in (paths.txt) do (
+	start "" %%P
 )
 
-:: UWP app start code (WIP)
-:: for /f "tokens=* delims= ^" %%u in (uwp.txt) do (
-::	set "family=%%u"
-::	start explorer shell:appsFolder\!family!!App
-::)
+:: UWP
+:: Getting list of all odd tokens
+set "odd_tokens="
+for /f "tokens=* delims= ^" %%L in (uwp.txt) do (
+	set /a div_rem=%%L %% 2
+	if !div_rem! == 0 set "odd_tokens=!odd_tokens!%%L,"
+)
+set "odd_tokens=%odd_:~0,-1%"
 
-:: Custom commands
-:: start explorer shell:appsFolder\MozillaThunderbird.MZLA_h5892qc0xkpca!App
+:: Code for starting UWP apps
+for /f "tokens=%odd_tokens% delims= ^" %%U in (uwp.txt) do (
+	set "family=%%U"
+	start explorer shell:appsFolder\!family!!App
+)
