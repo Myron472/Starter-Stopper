@@ -1,6 +1,6 @@
 # Starter-Stopper
  
-Starter-Stopper is 2 scripts for starting and stopping programs and services. Programs and services can be customized via .txt files.
+Starter-Stopper is 2 scripts for starting and stopping programs and services. Programs and services can be customized via *.txt* files.
 
 This program is represented in these programming languages:
 - Batch file (.cmd)
